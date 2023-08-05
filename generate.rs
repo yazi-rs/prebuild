@@ -22,10 +22,9 @@ pub fn main() -> Result<()> {
 				path.file_stem().and_then(|x| x.to_str()),
 			);
 
-			if let Ok(syn) = syn {
-				builder.add(syn);
-			} else {
-				println!("Failed to load syntax: {:?}", path);
+			match syn {
+				Ok(syn) => builder.add(syn),
+				Err(e) => println!("Failed to load syntax {:?}: {}", path, e),
 			}
 		}
 	}
