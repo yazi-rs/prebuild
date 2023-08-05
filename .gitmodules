@@ -39,7 +39,7 @@
 	url = https://github.com/zaynali53/DotENV.git
 [submodule "syntaxes/elixir"]
 	path = syntaxes/elixir
-	url = https://github.com/elm-community/SublimeElmLanguageSupport.git
+	url = https://github.com/elixir-editors/elixir-sublime-syntax.git
 [submodule "syntaxes/elm"]
 	path = syntaxes/elm
 	url = https://github.com/elm-community/SublimeElmLanguageSupport.git
