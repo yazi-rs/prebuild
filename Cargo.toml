@@ -1,0 +1,13 @@
+[package]
+name    = "prebuild"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow  = "^1"
+syntect = "^5"
+walkdir = "2.3.3"
+
+[[bin]]
+name = "generate"
+path = "generate.rs"
