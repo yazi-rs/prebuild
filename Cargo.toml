@@ -1,6 +1,6 @@
 [package]
 name        = "yazi-prebuild"
-version     = "0.1.0"
+version     = "0.1.1"
 edition     = "2021"
 license     = "MIT"
 homepage    = "https://github.com/sxyazi/yazi"
@@ -12,10 +12,14 @@ exclude     = [
 ]
 
 [dependencies]
-anyhow  = "^1"
-syntect = "^5"
-walkdir = "2.3.3"
+anyhow  = { version = "^1", optional = true }
+syntect = { version = "^5", optional = true }
+walkdir = { version = "^2", optional = true }
+
+[features]
+build_deps = [ "anyhow", "syntect", "walkdir" ]
 
 [[bin]]
-name = "generate"
-path = "generate.rs"
+name              = "generate"
+path              = "generate.rs"
+required-features = [ "build_deps" ]
