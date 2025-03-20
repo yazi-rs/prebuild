@@ -1,4 +1,4 @@
-# Prebuild
+# Prebuilt
 
 This repo is used to place the pre-built assets of [Yazi](https://github.com/sxyazi/yazi).
 
